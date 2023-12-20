@@ -1,0 +1,41 @@
+{
+    "MFG": {
+        "quantity": 1,
+        "recipe": [
+            {
+                "name": "VFG",
+                "quantity": 2.5
+            },
+            {
+                "name": "ECR",
+                "quantity": 1
+            },
+            {
+                "name": "BAT",
+                "quantity": 5
+            }
+        ]
+    },
+    "VFG": {
+        "quantity": 1,
+        "recipe": [
+            {
+                "name": "ECR",
+                "quantity": 2
+            },
+            {
+                "name": "BAT",
+                "quantity": 5
+            }
+        ]
+    },
+    "ECR": {
+        "quantity": 1,
+        "recipe": [
+            {
+                "name": "BAT",
+                "quantity": 1
+            }
+        ]
+    }
+}
