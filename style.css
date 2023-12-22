@@ -1,98 +1,44 @@
 body {
-    font-family: sans-serif;
-    margin: 0;
-    padding: 1em;
-  }
-  
-  .selection {
-    display: flex;
-    align-items: center;
-    margin-bottom: 1em;
-  }
-  
-  .selection h2 {
-    margin-right: 1em;
-  }
-  
-  #recipe-select {
-    padding: 5px;
-    border: 1px solid #ddd;
-  }
-  
-  .recipe-details, .raw-materials {
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 1em;
-    margin-bottom: 1em;
-  }
-  
-  h3 {
-    margin-bottom: 0.5em;
-  }
-  
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  li {
-    margin-bottom: 0.5em;
-  }
+  font-family: 'Arial', sans-serif;
+  background-color: #121212; /* Satisfactory dark background color */
+  color: #ffffff; /* Satisfactory text color */
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #ff4b00; /* Satisfactory orange color */
+  padding: 20px;
+  text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.selection, .recipe-details, .raw-materials {
+  background-color: #2d2d2d; /* Updated lighter color for panels */
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+h2, h3 {
+  color: #ff4b00; /* Satisfactory orange color */
+}
+
+select, input {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
 
-  #chart-container {
-    font-family: Arial;
-    height: 420px;
-    border: 2px dashed #aaa;
-    border-radius: 5px;
-    overflow: auto;
-    text-align: center;
-  }
-  
-  .orgchart {
-    background: #fff; 
-  }
-  .orgchart td.left, .orgchart td.right, .orgchart td.top {
-    border-color: #aaa;
-  }
-  .orgchart td>.down {
-    background-color: #aaa;
-  }
-  .orgchart .middle-level .title {
-    background-color: #006699;
-  }
-  .orgchart .middle-level .content {
-    border-color: #006699;
-  }
-  .orgchart .product-dept .title {
-    background-color: #009933;
-  }
-  .orgchart .product-dept .content {
-    border-color: #009933;
-  }
-  .orgchart .rd-dept .title {
-    background-color: #993366;
-  }
-  .orgchart .rd-dept .content {
-    border-color: #993366;
-  }
-  .orgchart .pipeline1 .title {
-    background-color: #996633;
-  }
-  .orgchart .pipeline1 .content {
-    border-color: #996633;
-  }
-  .orgchart .frontend1 .title {
-    background-color: #cc0066;
-  }
-  .orgchart .frontend1 .content {
-    border-color: #cc0066;
-  }
-  
-  #github-link {
-    position: fixed;
-    top: 0px;
-    right: 10px;
-    font-size: 3em;
-  }
+/* Add additional styles based on your requirements */
