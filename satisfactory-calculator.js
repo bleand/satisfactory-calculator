@@ -23,11 +23,21 @@ async function loadRecipesData() {
     // Update display on recipe selection
     recipeSelect.addEventListener("change", function () {
       const selectedElement = this.value;
-
+      var inputValue = parseFloat(document.getElementById("recipe-amount").value);
+      const initialQuantity = (inputValue > 0 && !isNaN(inputValue)) ? inputValue : 1;
       levelsData = {};
+      levelsData[selectedElement] = {"quantity":initialQuantity,"raw":false, "image":recipesData[selectedElement].image, "elements":{}};
+      levelsData[selectedElement] = expandRecipe(levelsData, selectedElement, initialQuantity);
+      displayRecipe();
+    });
 
-      levelsData[selectedElement] = {"quantity":1,"raw":false, "image":recipesData[selectedElement].image, "elements":{}};
-      levelsData[selectedElement] = expandRecipe(levelsData, selectedElement);
+    const recipeAmount = document.getElementById("recipe-amount");
+    recipeAmount.addEventListener("change", function () {
+      const selectedElement = document.getElementById("recipe-select").value;
+      const initialQuantity = this.value;
+      levelsData = {};
+      levelsData[selectedElement] = {"quantity":initialQuantity,"raw":false, "image":recipesData[selectedElement].image, "elements":{}};
+      levelsData[selectedElement] = expandRecipe(levelsData, selectedElement, initialQuantity);
       displayRecipe();
     });
   } catch (error) {
@@ -48,7 +58,7 @@ function expandRecipe(data, element, quantity = 1, level = 2) {
     for (const ingredient of ingredients) {
 
         const childElement = ingredient.name;
-        const childQuantity = ingredient.quantity;
+        const childQuantity = ingredient.quantity * multiplier;
 
         if (!recipesData[childElement]){alert(`missing ${childElement}`)}
         

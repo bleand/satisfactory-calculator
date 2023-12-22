@@ -14,26 +14,29 @@
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/d3-org-chart@3"></script>
     <script src="https://cdn.jsdelivr.net/npm/d3-flextree@2.1.2/build/d3-flextree.js"></script>
-  </head>
-  <body>
-    
-  <!-- <a id="github-link" href="https://github.com/dabeng/OrgChart" target="_blank"><i class="fa fa-github-square"></i></a> -->
+</head>
+<body>
+    <header>
+        <h1>Recipe Explorer</h1>
+    </header>
 
-    <h1>Recipe Explorer</h1>
-    <div class="selection">
-      <h2>Select Recipe:</h2>
-      <select id="recipe-select"></select>
-    </div>
-    
-    <div class="recipe-details" id="recipe-details">
-      <h3>Ingredients:</h3>
-      <ul id="ingredients-list"></ul>
-      <div class="chart-container"></div>
-    </div>
-    
-    <div class="raw-materials" id="raw-materials">
-      <h3>Raw Materials:</h3>
-      <div id="raw-materials-list"></div>
+    <div class="container">
+        <div class="selection">
+            <h2>Select Recipe:</h2>
+            <select id="recipe-select"></select>
+            <input id="recipe-amount" placeholder="Enter amount"></input>
+        </div>
+
+        <div class="recipe-details" id="recipe-details">
+            <h3>Ingredients:</h3>
+            <ul id="ingredients-list"></ul>
+            <div class="chart-container"></div>
+        </div>
+
+        <div class="raw-materials" id="raw-materials">
+            <h3>Raw Materials:</h3>
+            <div id="raw-materials-list"></div>
+        </div>
     </div>
 
     <script src="satisfactory-calculator.js"></script>
