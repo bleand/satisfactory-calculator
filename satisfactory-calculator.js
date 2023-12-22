@@ -29,6 +29,7 @@ async function loadRecipesData() {
       levelsData[selectedElement] = {"quantity":initialQuantity,"raw":false, "image":recipesData[selectedElement].image, "elements":{}};
       levelsData[selectedElement] = expandRecipe(levelsData, selectedElement, initialQuantity);
       displayRecipe();
+      displayRaw();
     });
 
     const recipeAmount = document.getElementById("recipe-amount");
@@ -39,6 +40,7 @@ async function loadRecipesData() {
       levelsData[selectedElement] = {"quantity":initialQuantity,"raw":false, "image":recipesData[selectedElement].image, "elements":{}};
       levelsData[selectedElement] = expandRecipe(levelsData, selectedElement, initialQuantity);
       displayRecipe();
+      displayRaw();
     });
   } catch (error) {
     console.error(error);
@@ -53,7 +55,7 @@ function expandRecipe(data, element, quantity = 1, level = 2) {
 
   let multiplier = quantity / recipesData[element].quantity
 
-  console.log("multiplier " + multiplier);
+  // console.log("multiplier " + multiplier);
   
   if (!recipesData[element].raw) {
     const ingredients = recipesData[element]["recipe"];
@@ -158,4 +160,34 @@ function flattenObject(obj, parentId = null, result = [], idCounter = { count: 1
       }
   });
   return result;
+}
+
+// Function to expand recipe and calculate raw materials
+function displayRaw() {
+  // console.log(levelsData);
+  const recipeSelect = document.getElementById("raw-materials-list");
+  const rawElements = getRawElements(levelsData, {});
+  console.log(rawElements)
+  recipeSelect.innerHTML = JSON.stringify(rawElements);
+}
+
+function getRawElements(data, rawElements){
+  console.log(data);
+  if (Object.keys(data).length > 1){
+    return {}
+  }
+  const thisElement = Object.keys(data)[0]
+  console.log(thisElement);
+  if (recipesData[thisElement].raw){
+    rawElements[thisElement] = rawElements[thisElement] || 0;
+    rawElements[thisElement] += data[thisElement].quantity;
+  } else {
+    const elements = data[thisElement]["elements"];
+    for (const child in elements) {
+      const childData = {}
+      childData[child] = elements[child]
+      rawElements = getRawElements(childData, rawElements)
+    }
+  }
+  return rawElements
 }
