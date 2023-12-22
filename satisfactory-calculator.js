@@ -51,7 +51,10 @@ loadRecipesData();
 // Function to expand recipe and calculate raw materials
 function expandRecipe(data, element, quantity = 1, level = 2) {
 
+  let multiplier = quantity / recipesData[element].quantity
 
+  console.log("multiplier " + multiplier);
+  
   if (!recipesData[element].raw) {
     const ingredients = recipesData[element]["recipe"];
     
