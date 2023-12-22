@@ -104,16 +104,13 @@ function displayRecipe() {
 
   const chart = new d3.OrgChart();
 
-  let nodeW, nodeH;
-
   chart
   .container('.chart-container')
   .data(flattenObject(levelsData))
+  .svgHeight(600)
   .nodeId((dataItem) => dataItem.id)
   .nodeWidth((d) => {
-    console.log(d.data.name)
-    console.log(d.data.name.length)
-    return d.data.name.length * 8 + 80;
+    return d.data.name.length * 8 + 100;
   })
   .siblingsMargin((a, b) => 50)
   .parentNodeId((dataItem) => dataItem.parent)
@@ -141,7 +138,6 @@ function displayRecipe() {
 }
 
 function flattenObject(obj, parentId = null, result = [], idCounter = { count: 1 }) {
-  console.log(obj);
   const keys = Object.keys(obj);
   
   keys.forEach((key) => {
