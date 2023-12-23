@@ -23,6 +23,16 @@ header {
   padding: 20px;
 }
 
+#raw-materials-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+#raw-materials-list > div {
+  width: 100%;
+}
+
 h2, h3 {
   color: #ff4b00; /* Satisfactory orange color */
 }

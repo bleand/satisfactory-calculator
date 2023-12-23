@@ -29,6 +29,7 @@ async function loadRecipesData() {
       levelsData[selectedElement] = {"quantity":initialQuantity,"raw":false, "image":recipesData[selectedElement].image, "elements":{}};
       levelsData[selectedElement] = expandRecipe(levelsData, selectedElement, initialQuantity);
       displayRecipe();
+      displayRaw();
     });
 
     const recipeAmount = document.getElementById("recipe-amount");
@@ -39,6 +40,7 @@ async function loadRecipesData() {
       levelsData[selectedElement] = {"quantity":initialQuantity,"raw":false, "image":recipesData[selectedElement].image, "elements":{}};
       levelsData[selectedElement] = expandRecipe(levelsData, selectedElement, initialQuantity);
       displayRecipe();
+      displayRaw();
     });
   } catch (error) {
     console.error(error);
@@ -53,7 +55,7 @@ function expandRecipe(data, element, quantity = 1, level = 2) {
 
   let multiplier = quantity / recipesData[element].quantity
 
-  console.log("multiplier " + multiplier);
+  // console.log("multiplier " + multiplier);
   
   if (!recipesData[element].raw) {
     const ingredients = recipesData[element]["recipe"];
@@ -115,16 +117,7 @@ function displayRecipe() {
   .siblingsMargin((a, b) => 50)
   .parentNodeId((dataItem) => dataItem.parent)
   .nodeContent(function (d, i, arr, state) {
-    const customHtml = `
-    <div style="padding: 10px;width: 100%; max-width: 400px; background-color: #1E1E1E; border-radius: 10px; overflow: hidden;">
-      <div style="position: relative;">
-        <div style="background-color: #2C3E50; border-radius: 50%; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;">
-          <img src="${d.data.image}" style="border-radius: 50%; width: 40px; height: 40px; display: block;">
-        </div>
-      </div>
-      <div style="font-size: 24px; color: #F5D76E; margin: 10px 0 0 0px;">  ${d.data.name} </div>
-      <div style="color: #BDC3C7; margin: 3px 0px 3px 0px; font-size: 18px;"> Quantity: ${d.data.quantity} </div>
-    </div>`
+    const customHtml = getNodeHtml(d.data)
     return customHtml
   })
   .linkUpdate(function (d, i, arr) {
@@ -158,4 +151,65 @@ function flattenObject(obj, parentId = null, result = [], idCounter = { count: 1
       }
   });
   return result;
+}
+
+// Function to expand recipe and calculate raw materials
+function displayRaw() {
+  // console.log(levelsData);
+  const recipeSelect = document.getElementById("raw-materials-list");
+  recipeSelect.innerHTML = "";
+  const rawElements = getRawElements(levelsData, {});
+  console.log(rawElements);
+  for (const rawElement in rawElements){
+    recipeSelect.innerHTML += getNodeHtml(rawElements[rawElement], false)
+  }
+}
+
+function getRawElements(data, rawElements){
+  if (Object.keys(data).length > 1){
+    return {}
+  }
+  const thisElement = Object.keys(data)[0]
+  if (recipesData[thisElement].raw){
+    if (!rawElements[thisElement]){
+      rawElements[thisElement] = recipesData[thisElement]
+      rawElements[thisElement].quantity = 0
+      rawElements[thisElement].name = thisElement
+    }
+    // rawElements[thisElement] = rawElements[thisElement] || 0;
+    rawElements[thisElement].quantity += data[thisElement].quantity;
+  } else {
+    const elements = data[thisElement]["elements"];
+    for (const child in elements) {
+      const childData = {}
+      childData[child] = elements[child]
+      rawElements = getRawElements(childData, rawElements)
+    }
+  }
+  return rawElements
+}
+
+
+function getNodeHtml(node, isGraph = true) {
+  if (!isGraph){
+    maxWidth = 140;
+    fontTitle = 16;
+    fontElse = 12;
+  }else{
+    maxWidth = 400;
+    fontTitle = 24;
+    fontElse = 18;
+  }
+  const nodeHtml = `
+  <div style="padding: 10px;width: 100%; max-width: ${maxWidth}px; background-color: #1E1E1E; border-radius: 10px; overflow: hidden;">
+    <div style="position: relative;">
+      <div style="background-color: #2C3E50; border-radius: 50%; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;">
+        <img src="${node.image}" style="border-radius: 50%; width: 40px; height: 40px; display: block;">
+      </div>
+    </div>
+    <div style="font-size: ${fontTitle}px; color: #F5D76E; margin: 10px 0 0 0px;">  ${node.name} </div>
+    <div style="color: #BDC3C7; margin: 3px 0px 3px 0px; font-size: ${fontElse}px;"> Quantity: ${node.quantity} </div>
+  </div>`
+
+  return nodeHtml
 }
