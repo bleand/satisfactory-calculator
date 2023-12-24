@@ -24,7 +24,7 @@ async function loadRecipesData() {
     recipeSelect.addEventListener("change", function () {
       const selectedElement = this.value;
       var inputValue = parseFloat(document.getElementById("recipe-amount").value);
-      const initialQuantity = (inputValue > 0 && !isNaN(inputValue)) ? inputValue : 1;
+      const initialQuantity = (inputValue > 0 && !isNaN(inputValue)) ? inputValue : recipesData[selectedElement].quantity;
       levelsData = {};
       levelsData[selectedElement] = {"quantity":initialQuantity,"raw":false, "image":recipesData[selectedElement].image, "elements":{}};
       levelsData[selectedElement] = expandRecipe(levelsData, selectedElement, initialQuantity);
@@ -35,7 +35,11 @@ async function loadRecipesData() {
     const recipeAmount = document.getElementById("recipe-amount");
     recipeAmount.addEventListener("change", function () {
       const selectedElement = document.getElementById("recipe-select").value;
-      const initialQuantity = this.value;
+      var initialQuantity = this.value;
+      if (!initialQuantity){
+        initialQuantity = recipesData[selectedElement].quantity;
+      }
+      
       levelsData = {};
       levelsData[selectedElement] = {"quantity":initialQuantity,"raw":false, "image":recipesData[selectedElement].image, "elements":{}};
       levelsData[selectedElement] = expandRecipe(levelsData, selectedElement, initialQuantity);
