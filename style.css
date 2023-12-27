@@ -18,11 +18,23 @@ header {
   padding: 20px;
 }
 
-.selection, .recipe-details, .raw-materials {
+.selection-area, .recipe-details, .raw-materials {
   background-color: #2d2d2d; /* Updated lighter color for panels */
   margin-bottom: 20px;
   padding: 20px;
   position: relative;
+}
+
+.select2-container--default .select2-selection--single{
+  background-color: #2d2d2d !important;
+}
+
+.select2-dropdown, .select2-container{
+  background-color: #2d2d2d !important;
+}
+
+.select2-selection__rendered{
+  color:#ff4b00 !important;
 }
 
 #raw-materials-list {
@@ -39,12 +51,12 @@ h2, h3 {
   color: #ff4b00; /* Satisfactory orange color */
 }
 
-select, input {
+/* select, input {
   padding: 10px;
   margin-bottom: 10px;
   width: 100%;
   box-sizing: border-box;
-}
+} */
 
 ul {
   list-style: none;

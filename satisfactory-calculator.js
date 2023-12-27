@@ -3,8 +3,6 @@ import { loadRecipesDataJson, expandRecipe, loadRecipesToDiv } from "./utils.js"
 let recipesData;
 let levelsData;
 
-recipesData = await loadRecipesData();
-
 async function loadRecipesData() {
   try {
     
@@ -13,27 +11,9 @@ async function loadRecipesData() {
     // Populate recipe dropdown
     const recipeSelect = document.getElementById("recipe-select");
 
-    loadRecipesToDiv(recipesData, recipeSelect)
+    await loadRecipesToDiv(recipesData, recipeSelect)
 
-    // for (const element in recipesData) {
-    //   const option = document.createElement("option");
-    //   option.value = element;
-    //   option.innerText = element;
-    //   recipeSelect.appendChild(option);
-    // }
     recipeSelect.selectedIndex = -1;
-
-    // Update display on recipe selection
-    recipeSelect.addEventListener("change", function () {
-      const selectedElement = this.value;
-      var inputValue = parseFloat(document.getElementById("recipe-amount").value);
-      const initialQuantity = (inputValue > 0 && !isNaN(inputValue)) ? inputValue : recipesData[selectedElement].quantity;
-      levelsData = {};
-      levelsData[selectedElement] = {"quantity":initialQuantity,"raw":false, "image":recipesData[selectedElement].image, "elements":{}};
-      levelsData[selectedElement] = expandRecipe(levelsData, selectedElement, initialQuantity);
-      displayRecipe();
-      displayRaw();
-    });
 
     const recipeAmount = document.getElementById("recipe-amount");
     recipeAmount.addEventListener("change", function () {
@@ -54,6 +34,31 @@ async function loadRecipesData() {
   }
   return recipesData;
 }
+
+
+await loadRecipesData().then( function (data){
+  recipesData = data
+  $("#recipe-select").select2();
+}
+);
+
+let id = 1
+console.log(id)
+console.log(recipesData)
+console.log(id)
+// Update display on recipe selection
+$('#recipe-select').on('change', function(e) {
+  // recipeSelect.addEventListener("change", function () {
+    const selectedElement = this.value;
+    // console.log(recipesData)
+    var inputValue = parseFloat(document.getElementById("recipe-amount").value);
+    const initialQuantity = (inputValue > 0 && !isNaN(inputValue)) ? inputValue : recipesData[selectedElement].quantity;
+    levelsData = {};
+    levelsData[selectedElement] = {"quantity":initialQuantity,"raw":false, "image":recipesData[selectedElement].image, "elements":{}};
+    levelsData[selectedElement] = expandRecipe(levelsData, selectedElement, initialQuantity);
+    displayRecipe();
+    displayRaw();
+  });
 
 
 function jsonToHtml(data) {
