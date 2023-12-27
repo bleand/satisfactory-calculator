@@ -35,10 +35,24 @@ async function loadRecipesData() {
   return recipesData;
 }
 
+function formatElement (element) {
+  if (!element.id) {
+    return element.text;
+  }
+  var imageURL = recipesData[element.text].image;
+  var $state = $(
+    '<span><img src="' + imageURL + '" class="img-icon" /> ' + element.text + '</span>'
+  );
+  return $state;
+};
+
 
 await loadRecipesData().then( function (data){
   recipesData = data
-  $("#recipe-select").select2();
+  $("#recipe-select").select2( {
+    theme: 'bootstrap-5',
+    templateResult: formatElement
+} );
 }
 );
 
