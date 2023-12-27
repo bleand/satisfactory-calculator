@@ -1,9 +1,16 @@
-import { loadRecipesDataJson, expandRecipe, loadRecipesToDiv } from './../utils.js';
+import { loadRecipesDataJson, expandRecipe, loadRecipesToDiv, formatElement } from './../utils.js';
 
 let recipesData, levelsData;
 
 async function loadRecipes() {
-    recipesData = await loadRecipesDataJson("./../recipes.json");
+    await loadRecipesDataJson("./../recipes.json").then( function (data){
+        recipesData = data
+        $("#recipe-select").select2( {
+          theme: 'bootstrap-5',
+          templateResult: formatElement
+      } );
+      }
+      );
 }
 window.onload = loadRecipes;
 
@@ -28,12 +35,12 @@ document.getElementById('addMaterialAmount').addEventListener('click', async fun
     var newSelect = document.createElement('select');
     newSelect.id = "recipe-select-"+materialAmountInputs.children.length;
     newSelect.name = "material[]";
-    
+
     await loadRecipesToDiv(recipesData, newSelect).then(function() {
         newSelect.selectedIndex = -1;
         newInputSet.innerHTML += newSelect.outerHTML;
     });
- 
+
     newSelect.selectedIndex = -1;
             
     newInputSet.innerHTML += `<label for="amount">Amount:</label>
@@ -44,6 +51,10 @@ document.getElementById('addMaterialAmount').addEventListener('click', async fun
     var recipeSelect = document.getElementById(newSelect.id);
     recipeSelect.selectedIndex = -1;
 
+    $("#"+newSelect.id).select2( {
+        theme: 'bootstrap-5',
+        templateResult: formatElement
+    } );
 
 });
 
