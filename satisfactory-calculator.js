@@ -1,23 +1,26 @@
-let recipesData;
+import { loadRecipesDataJson, expandRecipe, loadRecipesToDiv } from "./utils.js";
 
+let recipesData;
 let levelsData;
+
+recipesData = await loadRecipesData();
 
 async function loadRecipesData() {
   try {
-    const response = await fetch("recipes.json");
-    const data = await response.json();
-    recipesData = data;
-
+    
+    recipesData = await loadRecipesDataJson()
     // Update any components or functions that rely on the loaded data
     // Populate recipe dropdown
     const recipeSelect = document.getElementById("recipe-select");
 
-    for (element in recipesData) {
-      const option = document.createElement("option");
-      option.value = element;
-      option.innerText = element;
-      recipeSelect.appendChild(option);
-    }
+    loadRecipesToDiv(recipesData, recipeSelect)
+
+    // for (const element in recipesData) {
+    //   const option = document.createElement("option");
+    //   option.value = element;
+    //   option.innerText = element;
+    //   recipeSelect.appendChild(option);
+    // }
     recipeSelect.selectedIndex = -1;
 
     // Update display on recipe selection
@@ -49,42 +52,9 @@ async function loadRecipesData() {
   } catch (error) {
     console.error(error);
   }
+  return recipesData;
 }
 
-loadRecipesData();
-
-
-// Function to expand recipe and calculate raw materials
-function expandRecipe(data, element, quantity = 1, level = 2) {
-
-  let multiplier = quantity / recipesData[element].quantity
-
-  // console.log("multiplier " + multiplier);
-  
-  if (!recipesData[element].raw) {
-    const ingredients = recipesData[element]["recipe"];
-    
-    for (const ingredient of ingredients) {
-
-        const childElement = ingredient.name;
-        const childQuantity = ingredient.quantity * multiplier;
-
-        if (!recipesData[childElement]){alert(`missing ${childElement}`)}
-        
-        const childImage = recipesData[childElement].image ?? null;
-        const childData = {};
-        childData[childElement] = {"quantity":childQuantity,"raw":false, "image":childImage, "elements":{}};
-        data[element]["elements"][childElement] = expandRecipe(childData, childElement, childQuantity, level + 1);
-        
-      }
-      return data[element];
-  } else {
-    // levelsData[level] = levelsData[level].concat(element);
-    data[element]["raw"] = true;
-    return data[element];
-  }
-  
-}
 
 function jsonToHtml(data) {
   let html = "";
@@ -195,6 +165,7 @@ function getRawElements(data, rawElements){
 
 
 function getNodeHtml(node, isGraph = true) {
+  let maxWidth, fontTitle, fontElse;
   if (!isGraph){
     maxWidth = 140;
     fontTitle = 16;

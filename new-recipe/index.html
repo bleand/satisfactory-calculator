@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Recipe</title>
+    <link rel="stylesheet" href="./../style.css">
+</head>
+<body>
+    <header>
+        <h1>Adding new recipe</h1>
+    </header>
+        
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <br>
+        <label for="quantity">Quantity:</label>
+        <input type="text" id="quantity" name="quantity">
+        <br>
+        <label for="imageLink">Image Link:</label>
+        <input type="text" id="imageLink" name="imageLink">
+        <br>
+        <label for="raw">Raw:</label>
+        <input type="checkbox" id="raw" name="raw" checked>
+        <br>
+        <div id="materialAmountInputsSection" class="hidden">
+            <div id="materialAmountInputs">
+                
+            </div>
+            <button class="button satisfactory-button" id="addMaterialAmount">Add Material and Amount</button>
+            <button class="button satisfactory-button" id="removeMaterialAmount">Remove Material and Amount</button>
+        </div>
+        <br>
+        
+        <button class="button satisfactory-button" id="addRecipe">Add recipe</button>
+        <a href="./../" class="button satisfactory-button">Go Back</a>
+        <br>
+        
+<script src="new-recipe.js" type="module"></script>
+</body>
+
+</html>
+
