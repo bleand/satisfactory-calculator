@@ -1,5 +1,5 @@
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   background-color: #121212 !important; /* Satisfactory dark background color */
   color: #ffffff; /* Satisfactory text color */
   margin: 0;
@@ -18,14 +18,16 @@ header {
   padding: 20px;
 }
 
-.selection-area, .recipe-details, .raw-materials {
+.selection-area,
+.recipe-details,
+.raw-materials {
   background-color: #2d2d2d; /* Updated lighter color for panels */
   margin-bottom: 20px;
   padding: 20px;
   position: relative;
 }
 
-.img-icon{
+.img-icon {
   max-width: 30px;
 }
 
@@ -33,7 +35,7 @@ header {
   background-color: #2d2d2d !important;
 } */
 
-.select2-container--bootstrap-5 .select2-selection{
+.select2-container--bootstrap-5 .select2-selection {
   background-color: #2d2d2d !important;
   border-color: #ecf0f1 !important;
   box-shadow: 0 0 0 0 !important;
@@ -45,36 +47,43 @@ header {
   box-shadow: 0 0 0 0 !important;
 }
 
-.select2-dropdown, .select2-container .select2-search .select2-results{
+.select2-dropdown,
+.select2-container .select2-search .select2-results {
   background-color: #2d2d2d !important;
   border-color: #ecf0f1 !important;
   box-shadow: 0 0 0 0 !important;
-} 
-
-.select2-search__field{
-  background-color: #2d2d2d !important;
-  border-color: #ecf0f1 !important;
-  box-shadow: 0 0 0 0 !important;
-  color: #ecf0f1 !important;
 }
 
-.select2-selection__rendered{
-  color:#ff4b00 !important;
-  border-color: #ecf0f1 !important;
-  box-shadow: 0 0 0 0 !important;
-} 
-
-.select2-selection__arrow b{
-  display:none !important;
-}
-
-.form-control{
+.select2-search__field {
   background-color: #2d2d2d !important;
   border-color: #ecf0f1 !important;
   box-shadow: 0 0 0 0 !important;
   color: #ecf0f1 !important;
 }
 
+.select2-selection__rendered {
+  color: #ff4b00 !important;
+  border-color: #ecf0f1 !important;
+  box-shadow: 0 0 0 0 !important;
+}
+
+.select2-selection__arrow b {
+  display: none !important;
+}
+
+.form-control {
+  background-color: #2d2d2d !important;
+  border-color: #ecf0f1 !important;
+  box-shadow: 0 0 0 0 !important;
+  color: #ecf0f1 !important;
+}
+
+.form-text-custom {
+  background-color: #2d2d2d !important;
+  border-color: #ecf0f1 !important;
+  box-shadow: 0 0 0 0 !important;
+  color: #ecf0f1 !important;
+}
 
 #raw-materials-list {
   display: grid;
@@ -86,16 +95,10 @@ header {
   width: 100%;
 }
 
-h2, h3 {
+h2,
+h3 {
   color: #ff4b00; /* Satisfactory orange color */
 }
-
-/* select, input {
-  padding: 10px;
-  margin-bottom: 10px;
-  width: 100%;
-  box-sizing: border-box;
-} */
 
 ul {
   list-style: none;
@@ -103,68 +106,45 @@ ul {
   margin: 0;
 }
 
-
 /* Add additional styles based on your requirements */
 a.button {
   -webkit-appearance: button;
   -moz-appearance: button;
   appearance: button;
-
   text-decoration: none;
-  color: initial;
 }
 
-#new-recipe{
+#new-recipe {
   position: absolute;
   top: 20px;
   right: 20px;
 }
 
-/* CSS */
-.button-31 {
-  background-color: #222;
-  border-radius: 4px;
-  border-style: none;
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  font-family: "Farfetch Basis","Helvetica Neue",Arial,sans-serif;
-  font-weight: 700;
-  line-height: 1.5;
-  padding: 2px;
-  max-width: none;
-  outline: none;
-  overflow: hidden;
-  text-align: center;
-  text-transform: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
-
-.button-31:hover,
-.button-31:focus {
-  opacity: .75;
-}
-
 .satisfactory-button {
   background-color: #2c3e50; /* Dark blue-gray background color */
-  color: #ecf0f1; /* Light gray text color */
+  color: #ecf0f1 !important; /* Light gray text color */
   padding: 15px 25px;
   font-size: 16px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   /* Add a subtle gradient effect */
-  background-image: linear-gradient(to bottom, #34495e, #2c3e50);
+  background-image: linear-gradient(to bottom, #34495e, #2c3e50) !important;
 }
 
 .satisfactory-button:hover {
-  background-image: linear-gradient(to bottom, #2c3e50, #34495e);
+  background-image: linear-gradient(to bottom, #2c3e50, #34495e) !important;
+}
+
+.satisfactory-button:active {
+  background-image: linear-gradient(to bottom, #2c3e50, #34495e) !important;
+}
+
+.btn-check:checked + .satisfactory-button {
+  background-image: linear-gradient(to bottom, #2c3e50, #34495e) !important;
+  color: #ff4b00 !important;
 }
 
 .hidden {
   display: none;
 }
-
