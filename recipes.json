@@ -1,363 +1,436 @@
 {
     "Magnetic Field Generator": {
-        "quantity": 1,
-        "recipe": [
-            {
-                "name": "Versatile Framework",
-                "quantity": 2.5
-            },
-            {
-                "name": "Electromagnetic Control Rod",
-                "quantity": 1
-            },
-            {
-                "name": "Battery",
-                "quantity": 5
-            }
-        ],
-        "image":"https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/4/47/Magnetic_Field_Generator.png"
+      "quantity": 1,
+      "recipe": [
+        {
+          "name": "Versatile Framework",
+          "quantity": 2.5
+        },
+        {
+          "name": "Electromagnetic Control Rod",
+          "quantity": 1
+        },
+        {
+          "name": "Battery",
+          "quantity": 5
+        }
+      ],
+      "image": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/4/47/Magnetic_Field_Generator.png"
     },
     "Versatile Framework": {
-        "quantity": 5,
-        "recipe": [
-            {
-                "name": "Steel Beam",
-                "quantity": 30
-            },
-            {
-                "name": "Modular Frame",
-                "quantity": 2.5
-            }
-        ],
-        "image":"https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/7/74/Versatile_Framework.png"
+      "quantity": 5,
+      "recipe": [
+        {
+          "name": "Steel Beam",
+          "quantity": 30
+        },
+        {
+          "name": "Modular Frame",
+          "quantity": 2.5
+        }
+      ],
+      "image": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/7/74/Versatile_Framework.png"
     },
     "Modular Frame": {
-        "quantity": 2,
-        "recipe": [
-            {
-                "name": "Reinforced Iron Plate",
-                "quantity": 3
-            },
-            {
-                "name": "Iron Rod",
-                "quantity": 12
-            }
-        ],
-        "image":"https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/8/81/Modular_Frame.png"
+      "quantity": 2,
+      "recipe": [
+        {
+          "name": "Reinforced Iron Plate",
+          "quantity": 3
+        },
+        {
+          "name": "Iron Rod",
+          "quantity": 12
+        }
+      ],
+      "image": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/8/81/Modular_Frame.png"
     },
     "Steel Beam": {
-        "quantity": 15,
-        "recipe": [
-            {
-                "name": "Steel Ingot",
-                "quantity": 60
-            }
-        ],
-        "image":"https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/6/6f/Steel_Beam.png"
+      "quantity": 15,
+      "recipe": [
+        {
+          "name": "Steel Ingot",
+          "quantity": 60
+        }
+      ],
+      "image": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/6/6f/Steel_Beam.png"
     },
     "Steel Ingot": {
-        "quantity": 45,
-        "recipe": [
-            {
-                "name": "Iron Ore",
-                "quantity": 45
-            },
-            {
-                "name": "Coal",
-                "quantity": 45
-            }
-        ],
-        "image":"https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/b/bd/Steel_Ingot.png"
-    }
-    ,
+      "quantity": 45,
+      "recipe": [
+        {
+          "name": "Iron Ore",
+          "quantity": 45
+        },
+        {
+          "name": "Coal",
+          "quantity": 45
+        }
+      ],
+      "image": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/b/bd/Steel_Ingot.png"
+    },
     "Iron Ore": {
-        "quantity": 1,
-        "raw":true,
-        "image":"https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/8/87/Iron_Ore.png"
+      "quantity": 1,
+      "raw": true,
+      "image": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/8/87/Iron_Ore.png"
     },
     "Coal": {
-        "quantity": 1,
-        "raw":true,
-        "image":"https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/a/a7/Coal.png"
+      "quantity": 1,
+      "raw": true,
+      "image": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/a/a7/Coal.png"
     },
     "Reinforced Iron Plate": {
-        "quantity": 5,
-        "recipe": [
-            {
-                "name": "Iron Plate",
-                "quantity": 30
-            },
-            {
-                "name": "Screw",
-                "quantity": 60
-            }
-        ],
-        "image":"https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/2/29/Reinforced_Iron_Plate.png"
+      "quantity": 5,
+      "recipe": [
+        {
+          "name": "Iron Plate",
+          "quantity": 30
+        },
+        {
+          "name": "Screw",
+          "quantity": 60
+        }
+      ],
+      "image": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/2/29/Reinforced_Iron_Plate.png"
     },
     "Iron Plate": {
-        "quantity": 20,
-        "recipe": [
-            {
-                "name": "Iron Ingot",
-                "quantity": 30
-            }
-        ],
-        "image":"https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/5/51/Iron_Plate.png"
+      "quantity": 20,
+      "recipe": [
+        {
+          "name": "Iron Ingot",
+          "quantity": 30
+        }
+      ],
+      "image": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/5/51/Iron_Plate.png"
     },
     "Screw": {
-        "quantity": 40,
-        "recipe": [
-            {
-                "name": "Iron Rod",
-                "quantity": 10
-            }
-        ],
-        "image":"https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/5/59/Screw.png"
+      "quantity": 40,
+      "recipe": [
+        {
+          "name": "Iron Rod",
+          "quantity": 10
+        }
+      ],
+      "image": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/5/59/Screw.png"
     },
     "Iron Ingot": {
-        "quantity": 30,
-        "recipe": [
-            {
-                "name": "Iron Ore",
-                "quantity": 30
-            }
-        ],
-        "image":"https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/0/0a/Iron_Ingot.png"
+      "quantity": 30,
+      "recipe": [
+        {
+          "name": "Iron Ore",
+          "quantity": 30
+        }
+      ],
+      "image": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/0/0a/Iron_Ingot.png"
     },
     "Iron Rod": {
-        "quantity": 15,
-        "recipe": [
-            {
-                "name": "Iron Ingot",
-                "quantity": 15
-            }
-        ],
-        "image":"https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/5/5f/Iron_Rod.png"
+      "quantity": 15,
+      "recipe": [
+        {
+          "name": "Iron Ingot",
+          "quantity": 15
+        }
+      ],
+      "image": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/5/5f/Iron_Rod.png"
     },
     "Electromagnetic Control Rod": {
-        "quantity": 4,
-        "recipe": [
-            {
-                "name": "Stator",
-                "quantity": 6
-            },
-            {
-                "name": "AI Limiter",
-                "quantity": 4
-            }
-        ],
-        "image":"https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/a/a2/Electromagnetic_Control_Rod.png"
+      "quantity": 4,
+      "recipe": [
+        {
+          "name": "Stator",
+          "quantity": 6
+        },
+        {
+          "name": "AI Limiter",
+          "quantity": 4
+        }
+      ],
+      "image": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/a/a2/Electromagnetic_Control_Rod.png"
     },
     "Stator": {
-        "quantity": 5,
-        "recipe": [
-            {
-                "name": "Steel Pipe",
-                "quantity": 15
-            },
-            {
-                "name": "Wire",
-                "quantity": 40
-            }
-        ],
-        "image":"https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/1/13/Stator.png"
+      "quantity": 5,
+      "recipe": [
+        {
+          "name": "Steel Pipe",
+          "quantity": 15
+        },
+        {
+          "name": "Wire",
+          "quantity": 40
+        }
+      ],
+      "image": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/1/13/Stator.png"
     },
     "AI Limiter": {
-        "quantity": 5,
-        "recipe": [
-            {
-                "name": "Copper Sheet",
-                "quantity": 25
-            },
-            {
-                "name": "Quickwire",
-                "quantity": 100
-            }
-        ],
-        "image":"https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/0/0d/AI_Limiter.png"
+      "quantity": 5,
+      "recipe": [
+        {
+          "name": "Copper Sheet",
+          "quantity": 25
+        },
+        {
+          "name": "Quickwire",
+          "quantity": 100
+        }
+      ],
+      "image": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/0/0d/AI_Limiter.png"
     },
     "Steel Pipe": {
-        "quantity": 20,
-        "recipe": [
-            {
-                "name": "Steel Ingot",
-                "quantity": 30
-            }
-        ],
-        "image":"https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/a/aa/Steel_Pipe.png"
+      "quantity": 20,
+      "recipe": [
+        {
+          "name": "Steel Ingot",
+          "quantity": 30
+        }
+      ],
+      "image": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/a/aa/Steel_Pipe.png"
     },
     "Copper Sheet": {
-        "quantity": 10,
-        "recipe": [
-            {
-                "name": "Copper Ingot",
-                "quantity": 20
-            }
-        ],
-        "image":"https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/e/e1/Copper_Sheet.png"
+      "quantity": 10,
+      "recipe": [
+        {
+          "name": "Copper Ingot",
+          "quantity": 20
+        }
+      ],
+      "image": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/e/e1/Copper_Sheet.png"
     },
     "Wire": {
-        "quantity": 30,
-        "recipe": [
-            {
-                "name": "Copper Ingot",
-                "quantity": 15
-            }
-        ],
-        "image":"https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/7/77/Wire.png"
+      "quantity": 30,
+      "recipe": [
+        {
+          "name": "Copper Ingot",
+          "quantity": 15
+        }
+      ],
+      "image": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/7/77/Wire.png"
     },
     "Copper Ingot": {
-        "quantity": 30,
-        "recipe": [
-            {
-                "name": "Copper Ore",
-                "quantity": 30
-            }
-        ],
-        "image":"https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/0/00/Copper_Ingot.png"
+      "quantity": 30,
+      "recipe": [
+        {
+          "name": "Copper Ore",
+          "quantity": 30
+        }
+      ],
+      "image": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/0/00/Copper_Ingot.png"
     },
     "Copper Ore": {
-        "quantity": 1,
-        "raw": true,
-        "image":"https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/7/78/Copper_Ore.png"
+      "quantity": 1,
+      "raw": true,
+      "image": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/7/78/Copper_Ore.png"
     },
     "Battery": {
-        "quantity": 20,
-        "recipe": [
-            {
-                "name": "Sulfuric Acid",
-                "quantity": 50
-            },
-            {
-                "name": "Alumina Solution",
-                "quantity": 40
-            },
-            {
-                "name": "Aluminum Casing",
-                "quantity": 20
-            }
-        ],
-        "image":"https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/6/6d/Battery.png"
+      "quantity": 20,
+      "recipe": [
+        {
+          "name": "Sulfuric Acid",
+          "quantity": 50
+        },
+        {
+          "name": "Alumina Solution",
+          "quantity": 40
+        },
+        {
+          "name": "Aluminum Casing",
+          "quantity": 20
+        }
+      ],
+      "image": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/6/6d/Battery.png"
     },
     "Sulfuric Acid": {
-        "quantity": 20,
-        "recipe": [
-            {
-                "name": "Sulfur",
-                "quantity": 50
-            },
-            {
-                "name": "Water",
-                "quantity": 50
-            }
-        ],
-        "image":"https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/8/8e/Sulfuric_Acid.png"
+      "quantity": 20,
+      "recipe": [
+        {
+          "name": "Sulfur",
+          "quantity": 50
+        },
+        {
+          "name": "Water",
+          "quantity": 50
+        }
+      ],
+      "image": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/8/8e/Sulfuric_Acid.png"
     },
     "Sulfur": {
-        "quantity": 1,
-        "raw": true,
-        "image":"https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/1/1d/Sulfur.png"
+      "quantity": 1,
+      "raw": true,
+      "image": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/1/1d/Sulfur.png"
     },
     "Water": {
-        "quantity": 1,
-        "raw": true,
-        "image":"https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/9/9d/Water.png"
+      "quantity": 1,
+      "raw": true,
+      "image": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/9/9d/Water.png"
     },
     "Alumina Solution": {
-        "quantity": 120,
-        "recipe": [
-            {
-                "name": "Bauxite",
-                "quantity": 120
-            },
-            {
-                "name": "Water",
-                "quantity": 180
-            }
-        ],
-        "image":"https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/d/da/Alumina_Solution.png"
+      "quantity": 120,
+      "recipe": [
+        {
+          "name": "Bauxite",
+          "quantity": 120
+        },
+        {
+          "name": "Water",
+          "quantity": 180
+        }
+      ],
+      "image": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/d/da/Alumina_Solution.png"
     },
     "Bauxite": {
-        "quantity": 1,
-        "raw": true,
-        "image":"https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/1/11/Bauxite.png"
+      "quantity": 1,
+      "raw": true,
+      "image": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/1/11/Bauxite.png"
     },
     "Aluminum Casing": {
-        "quantity": 60,
-        "recipe": [
-            {
-                "name": "Aluminum Ingot",
-                "quantity": 90
-            }
-        ],
-        "image":"https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/4/40/Aluminum_Casing.png"
+      "quantity": 60,
+      "recipe": [
+        {
+          "name": "Aluminum Ingot",
+          "quantity": 90
+        }
+      ],
+      "image": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/4/40/Aluminum_Casing.png"
     },
     "Aluminum Ingot": {
-        "quantity": 60,
-        "recipe": [
-            {
-                "name": "Aluminum Scrap",
-                "quantity": 90
-            },
-            {
-                "name": "Silica",
-                "quantity": 75
-            }
-        ],
-        "image":"https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/4/48/Aluminum_Ingot.png"
+      "quantity": 60,
+      "recipe": [
+        {
+          "name": "Aluminum Scrap",
+          "quantity": 90
+        },
+        {
+          "name": "Silica",
+          "quantity": 75
+        }
+      ],
+      "image": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/4/48/Aluminum_Ingot.png"
     },
     "Aluminum Scrap": {
-        "quantity": 360,
-        "recipe": [
-            {
-                "name": "Alumina Solution",
-                "quantity": 240
-            },
-            {
-                "name": "Coal",
-                "quantity": 120
-            }
-        ],
-        "image":"https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/4/4b/Aluminum_Scrap.png"
+      "quantity": 360,
+      "recipe": [
+        {
+          "name": "Alumina Solution",
+          "quantity": 240
+        },
+        {
+          "name": "Coal",
+          "quantity": 120
+        }
+      ],
+      "image": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/4/4b/Aluminum_Scrap.png"
     },
     "Silica": {
-        "quantity": 37.5,
-        "recipe": [
-            {
-                "name": "Raw Quartz",
-                "quantity": 22.5
-            }
-        ],
-        "image":"https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/9/94/Silica.png"
+      "quantity": 37.5,
+      "recipe": [
+        {
+          "name": "Raw Quartz",
+          "quantity": 22.5
+        }
+      ],
+      "image": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/9/94/Silica.png"
     },
     "Raw Quartz": {
-        "quantity": 1,
-        "raw": true,
-        "image":"https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/7/76/Raw_Quartz.png"
+      "quantity": 1,
+      "raw": true,
+      "image": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/7/76/Raw_Quartz.png"
     },
     "Quickwire": {
-        "quantity": 60,
-        "recipe": [
-            {
-                "name": "Caterium Ingot",
-                "quantity": 12
-            }
-        ],
-        "image":"https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/e/e4/Quickwire.png"
+      "quantity": 60,
+      "recipe": [
+        {
+          "name": "Caterium Ingot",
+          "quantity": 12
+        }
+      ],
+      "image": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/e/e4/Quickwire.png"
     },
     "Caterium Ingot": {
-        "quantity": 15,
-        "recipe": [
-            {
-                "name": "Caterium Ore",
-                "quantity": 45
-            }
-        ],
-        "image":"https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/f/f4/Caterium_Ingot.png"
+      "quantity": 15,
+      "recipe": [
+        {
+          "name": "Caterium Ore",
+          "quantity": 45
+        }
+      ],
+      "image": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/f/f4/Caterium_Ingot.png"
     },
     "Caterium Ore": {
-        "quantity": 1,
-        "raw": true,
-        "image":"https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/e/e3/Caterium_Ore.png"
+      "quantity": 1,
+      "raw": true,
+      "image": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/e/e3/Caterium_Ore.png"
+    },
+    "Limestone": {
+      "quantity": "1",
+      "image": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/4/4e/Limestone.png",
+      "raw": true
+    },
+    "Concrete": {
+      "quantity": "15",
+      "recipe": [
+        {
+          "name": "Limestone",
+          "quantity": "45"
+        }
+      ],
+      "image": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/c/c3/Concrete.png"
+    },
+    "Encased Industrial Beam": {
+      "quantity": "6",
+      "recipe": [
+        {
+          "name": "Steel Beam",
+          "quantity": "24"
+        },
+        {
+          "name": "Concrete",
+          "quantity": "30"
+        }
+      ],
+      "image": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/7/74/Encased_Industrial_Beam.png"
+    },
+    "Heavy Modular Frame": {
+      "quantity": "2",
+      "recipe": [
+        {
+          "name": "Modular Frame",
+          "quantity": "10"
+        },
+        {
+          "name": "Steel Pipe",
+          "quantity": "30"
+        },
+        {
+          "name": "Encased Industrial Beam",
+          "quantity": "10"
+        },
+        {
+          "name": "Screw",
+          "quantity": "200"
+        }
+      ],
+      "image": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/7/78/Heavy_Modular_Frame.png"
+    },
+    "Nitrogen Gas": {
+      "quantity": "1",
+      "image": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/2/27/Nitrogen_Gas.png",
+      "raw": true
+    },
+    "Fused Modular Frame": {
+      "quantity": "1.5",
+      "recipe": [
+        {
+          "name": "Heavy Modular Frame",
+          "quantity": "1.5"
+        },
+        {
+          "name": "Aluminum Casing",
+          "quantity": "75"
+        },
+        {
+          "name": "Nitrogen Gas",
+          "quantity": "37.5"
+        }
+      ],
+      "image": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/1/19/Fused_Modular_Frame.png"
     }
-}
+  }
