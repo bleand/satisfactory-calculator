@@ -703,5 +703,133 @@
       }
     ],
     "image": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/b/b3/Thermal_Propulsion_Rocket.png"
+  },
+  "Automated Wiring": {
+    "quantity": "2.5",
+    "recipe": [
+      {
+        "name": "Stator",
+        "quantity": "2.5"
+      },
+      {
+        "name": "Cable",
+        "quantity": "50"
+      }
+    ],
+    "image": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/f/f3/Automated_Wiring.png"
+  },
+  "Adaptive Control Unit": {
+    "quantity": "1",
+    "recipe": [
+      {
+        "name": "Automated Wiring",
+        "quantity": "7.5"
+      },
+      {
+        "name": "Circuit Board",
+        "quantity": "5"
+      },
+      {
+        "name": "Heavy Modular Frame",
+        "quantity": "1"
+      },
+      {
+        "name": "Computer",
+        "quantity": "1"
+      }
+    ],
+    "image": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/b/be/Adaptive_Control_Unit.png"
+  },
+  "High-Speed Connector": {
+    "quantity": "3.75",
+    "recipe": [
+      {
+        "name": "Quickwire",
+        "quantity": "210"
+      },
+      {
+        "name": "Cable",
+        "quantity": "37.5"
+      },
+      {
+        "name": "Circuit Board",
+        "quantity": "3.75"
+      }
+    ],
+    "image": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/d/da/High-Speed_Connector.png"
+  },
+  "Supercomputer": {
+    "quantity": "1.875",
+    "recipe": [
+      {
+        "name": "Computer",
+        "quantity": "3.75"
+      },
+      {
+        "name": "AI Limiter",
+        "quantity": "3.75"
+      },
+      {
+        "name": "High-Speed Connector",
+        "quantity": "5.625"
+      },
+      {
+        "name": "Plastic",
+        "quantity": "52.5"
+      }
+    ],
+    "image": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/3/3f/Supercomputer.png"
+  },
+  "Assembly Director System": {
+    "quantity": "0.75",
+    "recipe": [
+      {
+        "name": "Adaptive Control Unit",
+        "quantity": "1.5"
+      },
+      {
+        "name": "Supercomputer",
+        "quantity": "0.75"
+      }
+    ],
+    "image": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/b/ba/Assembly_Director_System.png"
+  },
+  "Copper Powder": {
+    "quantity": "50",
+    "recipe": [
+      {
+        "name": "Copper Ingot",
+        "quantity": "300"
+      }
+    ],
+    "image": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/f/fe/Copper_Powder.png"
+  },
+  "Pressure Conversion Cube": {
+    "quantity": "1",
+    "recipe": [
+      {
+        "name": "Fused Modular Frame",
+        "quantity": "1"
+      },
+      {
+        "name": "Radio Control Unit",
+        "quantity": "2"
+      }
+    ],
+    "image": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/3/3b/Pressure_Conversion_Cube.png"
+  },
+  "Nuclear Pasta": {
+    "quantity": "0.5",
+    "recipe": [
+      {
+        "name": "Copper Powder",
+        "quantity": "100"
+      },
+      {
+        "name": "Pressure Conversion Cube",
+        "quantity": "0.5"
+      }
+    ],
+    "image": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/9/93/Nuclear_Pasta.png"
   }
 }
