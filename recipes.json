@@ -831,5 +831,87 @@
       }
     ],
     "image": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/9/93/Nuclear_Pasta.png"
+  },
+  "Uranium": {
+    "quantity": "1",
+    "image": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/3/31/Uranium.png",
+    "raw": true
+  },
+  "Encased Uranium Cell": {
+    "quantity": "25",
+    "recipe": [
+      {
+        "name": "Uranium",
+        "quantity": "50"
+      },
+      {
+        "name": "Concrete",
+        "quantity": "15"
+      },
+      {
+        "name": "Sulfuric Acid",
+        "quantity": "40"
+      }
+    ],
+    "image": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/1/15/Encased_Uranium_Cell.png"
+  },
+  "Uranium Waste": {
+    "quantity": "1",
+    "image": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/7/7d/Uranium_Waste.png",
+    "raw": true
+  },
+  "Nitric Acid": {
+    "quantity": "30",
+    "recipe": [
+      {
+        "name": "Nitrogen Gas",
+        "quantity": "120"
+      },
+      {
+        "name": "Water",
+        "quantity": "30"
+      },
+      {
+        "name": "Iron Plate",
+        "quantity": "10"
+      }
+    ],
+    "image": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/4/41/Nitric_Acid.png"
+  },
+  "Non-fissile Uranium": {
+    "quantity": "50",
+    "recipe": [
+      {
+        "name": "Uranium Waste",
+        "quantity": "37.5"
+      },
+      {
+        "name": "Silica",
+        "quantity": "25"
+      },
+      {
+        "name": "Nitric Acid",
+        "quantity": "15"
+      },
+      {
+        "name": "Sulfuric Acid",
+        "quantity": "15"
+      }
+    ],
+    "image": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/2/25/Non-fissile_Uranium.png"
+  },
+  "Plutonium Pellet": {
+    "quantity": "30",
+    "recipe": [
+      {
+        "name": "Non-fissile Uranium",
+        "quantity": "100"
+      },
+      {
+        "name": "Uranium Waste",
+        "quantity": "25"
+      }
+    ],
+    "image": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/f/ff/Plutonium_Pellet.png"
   }
 }
