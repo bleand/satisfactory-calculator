@@ -913,5 +913,59 @@
       }
     ],
     "image": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/f/ff/Plutonium_Pellet.png"
+  },
+  "Uranium Fuel Rod": {
+    "quantity": "0.4",
+    "recipe": [
+      {
+        "name": "Encased Uranium Cell",
+        "quantity": "20"
+      },
+      {
+        "name": "Encased Industrial Beam",
+        "quantity": "1.2"
+      },
+      {
+        "name": "Electromagnetic Control Rod",
+        "quantity": "2"
+      }
+    ],
+    "image": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/3/3d/Uranium_Fuel_Rod.png"
+  },
+  "Encased Plutonium Cell": {
+    "quantity": "5",
+    "recipe": [
+      {
+        "name": "Plutonium Pellet",
+        "quantity": "10"
+      },
+      {
+        "name": "Concrete",
+        "quantity": "20"
+      }
+    ],
+    "image": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/3/3c/Encased_Plutonium_Cell.png"
+  },
+  "Plutonium Fuel Rod": {
+    "quantity": "0.25",
+    "recipe": [
+      {
+        "name": "Encased Plutonium Cell",
+        "quantity": "7.5"
+      },
+      {
+        "name": "Steel Beam",
+        "quantity": "4.5"
+      },
+      {
+        "name": "Electromagnetic Control Rod",
+        "quantity": "1.5"
+      },
+      {
+        "name": "Heat Sink",
+        "quantity": "2.5"
+      }
+    ],
+    "image": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/e/e9/Plutonium_Fuel_Rod.png"
   }
 }
