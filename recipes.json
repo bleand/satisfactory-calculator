@@ -397,7 +397,7 @@
       },
       {
         "name": "Steel Pipe",
-        "quantity": "30"
+        "quantity": "40"
       },
       {
         "name": "Encased Industrial Beam",
@@ -405,7 +405,7 @@
       },
       {
         "name": "Screw",
-        "quantity": "200"
+        "quantity": "240"
       }
     ],
     "image": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/7/78/Heavy_Modular_Frame.png"
@@ -625,19 +625,15 @@
     "recipe": [
       {
         "name": "Circuit Board",
-        "quantity": "25"
+        "quantity": "10"
       },
       {
         "name": "Cable",
-        "quantity": "22.5"
+        "quantity": "20"
       },
       {
         "name": "Plastic",
-        "quantity": "45"
-      },
-      {
-        "name": "Screw",
-        "quantity": "130"
+        "quantity": "40"
       }
     ],
     "image": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/0/02/Computer.png"
@@ -723,7 +719,7 @@
     "recipe": [
       {
         "name": "Automated Wiring",
-        "quantity": "7.5"
+        "quantity": "5"
       },
       {
         "name": "Circuit Board",
@@ -735,7 +731,7 @@
       },
       {
         "name": "Computer",
-        "quantity": "1"
+        "quantity": "2"
       }
     ],
     "image": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/b/be/Adaptive_Control_Unit.png"
