@@ -967,5 +967,43 @@
       }
     ],
     "image": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/e/e9/Plutonium_Fuel_Rod.png"
+  },
+  "Black Powder": {
+    "quantity": "30",
+    "recipe": [
+      {
+        "name": "Coal",
+        "quantity": "15"
+      },
+      {
+        "name": "Sulfur",
+        "quantity": "15"
+      }
+    ],
+    "image": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/3/3e/Black_Powder.png"
+  },
+  "Heavy Oil Residue": {
+    "quantity": "20",
+    "recipe": [
+      {
+        "name": "Crude Oil",
+        "quantity": "30"
+      }
+    ],
+    "image": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/b/bd/Heavy_Oil_Residue.png"
+  },
+  "Smokeless Powder": {
+    "quantity": "20",
+    "recipe": [
+      {
+        "name": "Black Powder",
+        "quantity": "20"
+      },
+      {
+        "name": "Heavy Oil Residue",
+        "quantity": "10"
+      }
+    ],
+    "image": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/e/ed/Smokeless_Powder.png"
   }
 }
