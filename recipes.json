@@ -379,11 +379,11 @@
     "recipe": [
       {
         "name": "Steel Beam",
-        "quantity": "24"
+        "quantity": "18"
       },
       {
         "name": "Concrete",
-        "quantity": "30"
+        "quantity": "36"
       }
     ],
     "image": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/7/74/Encased_Industrial_Beam.png"
