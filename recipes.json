@@ -997,5 +997,110 @@
       }
     ],
     "image": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/e/ed/Smokeless_Powder.png"
+  },
+  "Ficsite Ingot": {
+    "quantity": "1",
+    "image": "https://satisfactory.wiki.gg/images/4/4c/Ficsite_Ingot.png",
+    "recipe": [
+      {
+        "name": "Reanimated SAM",
+        "quantity": "40"
+      },
+      {
+        "name": "Iron Ingot",
+        "quantity": "240"
+      }
+    ]
+  },
+  "Ficsite Trigon": {
+    "quantity": "30",
+    "recipe": [
+      {
+        "name": "Ficsite Ingot",
+        "quantity": "10"
+      }
+    ],
+    "image": "https://satisfactory.wiki.gg/images/1/1b/Ficsite_Trigon.png"
+  },
+  "SAM": {
+    "quantity": "1",
+    "image": "https://satisfactory.wiki.gg/images/3/31/SAM.png",
+    "raw": true
+  },
+  "Reanimated SAM": {
+    "quantity": "30",
+    "recipe": [
+      {
+        "name": "SAM",
+        "quantity": "120"
+      }
+    ],
+    "image": "https://satisfactory.wiki.gg/images/8/8a/Reanimated_SAM.png"
+  },
+  "Empty Fluid Tank": {
+    "quantity": "60",
+    "recipe": [
+      {
+        "name": "Aluminum Ingot",
+        "quantity": "60"
+      }
+    ],
+    "image": "https://satisfactory.wiki.gg/images/b/bd/Empty_Fluid_Tank.png"
+  },
+  "SAM Fluctuator": {
+    "quantity": "10",
+    "recipe": [
+      {
+        "name": "Reanimated SAM",
+        "quantity": "60"
+      },
+      {
+        "name": "Wire",
+        "quantity": "50"
+      },
+      {
+        "name": "Steel Pipe",
+        "quantity": "30"
+      }
+    ],
+    "image": "https://satisfactory.wiki.gg/images/2/23/SAM_Fluctuator.png"
+  },
+  "Biochemical Sculptor": {
+    "quantity": "2",
+    "recipe": [
+      {
+        "name": "Assembly Director System",
+        "quantity": "0.5"
+      },
+      {
+        "name": "Ficsite Trigon",
+        "quantity": "40"
+      },
+      {
+        "name": "Water",
+        "quantity": "10"
+      }
+    ],
+    "image": "https://satisfactory.wiki.gg/images/d/df/Biochemical_Sculptor.png"
+  },
+  "Diamonds": {
+    "quantity": "30",
+    "recipe": [
+      {
+        "name": "Coal",
+        "quantity": "600"
+      }
+    ],
+    "image": "https://satisfactory.wiki.gg/images/9/94/Diamonds.png"
+  },
+  "Time Crystal": {
+    "quantity": "6",
+    "recipe": [
+      {
+        "name": "Diamonds",
+        "quantity": "12"
+      }
+    ],
+    "image": "https://satisfactory.wiki.gg/images/c/c0/Time_Crystal.png"
   }
 }
