@@ -1102,5 +1102,78 @@
       }
     ],
     "image": "https://satisfactory.wiki.gg/images/c/c0/Time_Crystal.png"
+  },
+  "Excited Photonic Matter": {
+    "quantity": "1",
+    "image": "https://satisfactory.wiki.gg/images/1/11/Excited_Photonic_Matter.png",
+    "raw": true
+  },
+  "Dark Matter Residue": {
+    "quantity": "100",
+    "recipe": [
+      {
+        "name": "Reanimated SAM",
+        "quantity": "50"
+      }
+    ],
+    "image": "https://satisfactory.wiki.gg/images/7/70/Dark_Matter_Residue.png"
+  },
+  "Neural-Quantum Processor": {
+    "quantity": "3",
+    "recipe": [
+      {
+        "name": "Time Crystal",
+        "quantity": "15"
+      },
+      {
+        "name": "Supercomputer",
+        "quantity": "3"
+      },
+      {
+        "name": "Ficsite Trigon",
+        "quantity": "45"
+      },
+      {
+        "name": "Excited Photonic Matter",
+        "quantity": "75"
+      }
+    ],
+    "image": "https://satisfactory.wiki.gg/images/0/07/Neural-Quantum_Processor.png"
+  },
+  "Dark Matter Crystal": {
+    "quantity": "30",
+    "recipe": [
+      {
+        "name": "Diamonds",
+        "quantity": "30"
+      },
+      {
+        "name": "Dark Matter Residue",
+        "quantity": "150"
+      }
+    ],
+    "image": "https://satisfactory.wiki.gg/images/9/9f/Dark_Matter_Crystal.png"
+  },
+  "Superposition Oscillator": {
+    "quantity": "5",
+    "recipe": [
+      {
+        "name": "Dark Matter Crystal",
+        "quantity": "30"
+      },
+      {
+        "name": "Crystal Oscillator",
+        "quantity": "5"
+      },
+      {
+        "name": "Alclad Aluminum Sheet",
+        "quantity": "45"
+      },
+      {
+        "name": "Excited Photonic Matter",
+        "quantity": "125"
+      }
+    ],
+    "image": "https://satisfactory.wiki.gg/images/8/82/Superposition_Oscillator.png"
   }
 }
