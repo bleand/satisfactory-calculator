@@ -1175,5 +1175,71 @@
       }
     ],
     "image": "https://satisfactory.wiki.gg/images/8/82/Superposition_Oscillator.png"
+  },
+  "AI Expansion Server": {
+    "quantity": "4",
+    "recipe": [
+      {
+        "name": "Magnetic Field Generator",
+        "quantity": "4"
+      },
+      {
+        "name": "Neural-Quantum Processor",
+        "quantity": "4"
+      },
+      {
+        "name": "Superposition Oscillator",
+        "quantity": "4"
+      },
+      {
+        "name": "Excited Photonic Matter",
+        "quantity": "100"
+      }
+    ],
+    "image": "https://satisfactory.wiki.gg/images/9/97/AI_Expansion_Server.png"
+  },
+  "Singularity Cell": {
+    "quantity": "10",
+    "recipe": [
+      {
+        "name": "Nuclear Pasta",
+        "quantity": "1"
+      },
+      {
+        "name": "Dark Matter Crystal",
+        "quantity": "20"
+      },
+      {
+        "name": "Iron Plate",
+        "quantity": "100"
+      },
+      {
+        "name": "Concrete",
+        "quantity": "200"
+      }
+    ],
+    "image": "https://satisfactory.wiki.gg/images/2/23/Singularity_Cell.png"
+  },
+  "Ballistic Warp Drive": {
+    "quantity": "1",
+    "recipe": [
+      {
+        "name": "Thermal Propulsion Rocket",
+        "quantity": "1"
+      },
+      {
+        "name": "Singularity Cell",
+        "quantity": "5"
+      },
+      {
+        "name": "Superposition Oscillator",
+        "quantity": "2"
+      },
+      {
+        "name": "Dark Matter Crystal",
+        "quantity": "40"
+      }
+    ],
+    "image": "https://satisfactory.wiki.gg/images/1/10/Ballistic_Warp_Drive.png"
   }
 }
