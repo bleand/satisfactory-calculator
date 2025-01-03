@@ -1241,5 +1241,50 @@
       }
     ],
     "image": "https://satisfactory.wiki.gg/images/1/10/Ballistic_Warp_Drive.png"
+  },
+  "Plutonium Waste": {
+    "quantity": "1",
+    "image": "https://satisfactory.wiki.gg/images/8/8a/Plutonium_Waste.png",
+    "raw": true
+  },
+  "Ficsonium": {
+    "quantity": "10",
+    "recipe": [
+      {
+        "name": "Plutonium Waste",
+        "quantity": "10"
+      },
+      {
+        "name": "Singularity Cell",
+        "quantity": "10"
+      },
+      {
+        "name": "Dark Matter Residue",
+        "quantity": "200"
+      }
+    ],
+    "image": "https://satisfactory.wiki.gg/images/a/ae/Ficsonium.png"
+  },
+  "Ficsonium Fuel Rod": {
+    "quantity": "2.5",
+    "recipe": [
+      {
+        "name": "Ficsonium",
+        "quantity": "5"
+      },
+      {
+        "name": "Electromagnetic Control Rod",
+        "quantity": "5"
+      },
+      {
+        "name": "Ficsite Trigon",
+        "quantity": "100"
+      },
+      {
+        "name": "Excited Photonic Matter",
+        "quantity": "50"
+      }
+    ],
+    "image": "https://satisfactory.wiki.gg/images/b/b7/Ficsonium_Fuel_Rod.png"
   }
 }
